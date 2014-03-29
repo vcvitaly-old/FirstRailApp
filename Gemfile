@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.4'
 
 # Use mysql as the database for Active Record
-gem 'mysql2'
+#gem 'mysql2'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
@@ -30,9 +30,20 @@ gem 'jbuilder', '~> 1.2'
 gem 'rspec-rails'
 gem 'capybara'
 
+gem 'guard-rspec'
+
+gem 'spork-rails', '4.0.0'
+gem 'guard-spork', '1.5.0'
+gem 'childprocess', '0.3.6'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :production do
+  gem 'mysql2'
+  gem 'rails_12factor'
 end
 
 # Use ActiveModel has_secure_password
