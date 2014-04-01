@@ -35,6 +35,7 @@ gem 'guard-rspec'
 gem 'spork-rails', '4.0.0'
 gem 'guard-spork', '1.5.0'
 gem 'childprocess', '0.3.6'
+gem 'bootstrap-sass', '2.3.2.0'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
