@@ -27,8 +27,7 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
-gem 'rspec-rails'
-gem 'capybara'
+
 
 gem 'guard-rspec'
 
@@ -37,6 +36,12 @@ gem 'guard-spork', '1.5.0'
 gem 'childprocess', '0.3.6'
 gem 'bootstrap-sass', '2.3.2.0'
 gem 'bcrypt-ruby', '3.1.5'
+
+group :test do
+  gem 'factory_girl_rails', '4.2.1'
+  gem 'rspec-rails'
+  gem 'capybara'
+end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
